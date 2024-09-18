@@ -1,8 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
+    font-family: "Ubuntu Mono", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8e4fc;
+    text-align: center;
     
     
 }
@@ -13,27 +14,131 @@ body {
 }
 
 header {
+    position: fixed; top: 0px;
+    height: 200px;
+    width: 100%;
     background-color: #ffffff;
     color: #000000;
     padding: 20px 0;
     text-align: center;
+    font-size: large;
+    justify-content: space-around;
+    border-style: solid;
+    border-width: 10px;
+    border-left: none;
+    border-right: none;
+    z-index: 1000;
+}
+
+a {
+
+    color: #000000;
+}
+
+a:hover {
+
+    color:#d400ff;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    text-size-adjust: auto;
+    position: fixed; bottom: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.about-text{
+    padding: 50px;
+
+    margin-top: 250px;
+    border-style: solid;
+    border-width: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contact-text{
+    padding: 50px;
+    height: 750px;
+    margin-top: 250px;
+    border-style: solid;
+    border-width: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contact-text img{
+    height: 200px;
+    margin: 50px;
+}
+
+.contact-form {
+    height: auto; 
+    margin: 50px;
+    text-align: center;
+    padding: 20px; 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 1fr;
+}
+
+
+
+
+.elfsight-app-94400079-4b2c-4e0c-9a19-0cf26afa0084{
+    border-style: solid;
+    border-width: 10px;
+    border-top: none;
+    padding: 50px;
+    margin-bottom: 150px;
+    border-left: none;
+    border-right: none;
 }
 
 nav ul {
     list-style-type: none;
     padding: 20px;
     margin: 0;
+
 }
+
+.home-nav:hover {
+    color: #f8e4fc;
+}
+
+.consent-nav:hover {
+    color: #f8e4fc;
+}
+
+.booking-nav:hover {
+    color: #f8e4fc;
+}
+
+.contact-nav:hover {
+    color: #f8e4fc;
+}
+
+
+
 
 nav ul li {
     display: inline; /* Display navigation items inline */
     margin-right: 20px;
+    border-style: solid;
+    border-width: 5px;
+    
 }
 
 nav ul li a {
     color: #000000;
     text-decoration: none;
-    padding: 20px; /* Add padding to navigation items */
+    padding: 20px; 
 }
 
 .logo {
@@ -46,13 +151,6 @@ nav ul li a {
 }
 
 
-footer {
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    padding: 0px 0;
-    text-size-adjust: auto;
-}
 
 .social-media img{
     width: 40px;
@@ -62,6 +160,23 @@ footer {
 @media screen and (max-width: 768px) {
     header {
         padding-top: 60px; 
+        height: 250px;
+        
+        
+    }
+
+    .elfsight-app-94400079-4b2c-4e0c-9a19-0cf26afa0084{
+        margin-bottom: 250px;
+
+    }
+
+    .about-text{
+        margin-top: 300px;
+    }
+
+    .contact-text{
+        margin-top: 300px;
+        height: 500px;
     }
 
     .logo {
@@ -70,11 +185,14 @@ footer {
         width: 80px; 
     }
 
+
     nav ul li {
         display: block; 
         margin: 0 auto; 
         margin-bottom: 10px; 
     }
+
+    
 }
 
 
