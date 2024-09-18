@@ -81,17 +81,29 @@ footer {
 .contact-form {
     height: auto; 
     margin: 50px;
+    margin-bottom: 150px;
     text-align: center;
     padding: 20px; 
-    display: grid; 
-    grid-template-columns: 1fr; 
-    gap: 1fr;
+
+}
+
+input {
+    margin-bottom: 20px; 
+}
+
+textarea {
+    width: 300px; /* Full width of the container */
+    height: 150px; /* Adjust the height as needed */
+    padding: 10px; /* Optional: adds space inside the textarea */
+    font-size: 16px; /* Optional: adjust font size */
 }
 
 
 
 
+
 .elfsight-app-94400079-4b2c-4e0c-9a19-0cf26afa0084{
+    
     border-style: solid;
     border-width: 10px;
     border-top: none;
@@ -99,6 +111,7 @@ footer {
     margin-bottom: 150px;
     border-left: none;
     border-right: none;
+    scale: 90%;
 }
 
 nav ul {
